@@ -1,0 +1,90 @@
+<!-- 
+📘 教學說明：
+這是主頁面檔案「index.html」
+主要包含：標題、導覽列、內容區（關於我、作品、聯絡我）與頁尾
+-->
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一個網站</title>
+
+  <!-- 
+  🔗 連結到外部 CSS 樣式檔（style.css）
+  這樣 HTML 結構與 CSS 樣式可分開管理，清晰又方便維護。
+  -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- =========================
+       頁首區塊（Header）
+       ========================= -->
+  <header>
+    <!-- h1 是網站的主標題 -->
+    <h1> 歡迎來到我的網站</h1>
+
+    <!-- 導覽列（Navigation） -->
+    <nav>
+      <ul>
+        <!-- 
+        每個 li 是一個導覽按鈕。
+        href="#about" 代表連結到同頁面中 id="about" 的區塊。
+        -->
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#works">作品集</a></li>
+        <li><a href="#contact">聯絡我</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================
+       關於我（About Section）
+       ========================= -->
+  <section id="about">
+    <!-- h2 是子標題 -->
+    <h2>關於我</h2>
+
+    <!-- p 標籤代表段落文字 -->
+    <p>大家好！我是剛開始學習網頁設計的新手，這是我第一個 HTML + CSS 網站！</p>
+    <p>我喜歡科技、動畫與遊戲設計，希望未來能製作出屬於自己的網站與作品。</p>
+  </section>
+
+  <!-- =========================
+       作品展示區（Works Section）
+       ========================= -->
+  <section id="works">
+    <h2>我的作品</h2>
+
+    <!-- 
+    .gallery 是圖片容器區域
+    示範：每張圖片都是一個作品的縮圖
+    可使用 placeholder 圖片測試（https://via.placeholder.com/200）
+    -->
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200" alt="作品一">
+      <img src="https://via.placeholder.com/200" alt="作品二">
+      <img src="https://via.placeholder.com/200" alt="作品三">
+    </div>
+  </section>
+
+  <!-- =========================
+       聯絡方式（Contact Section）
+       ========================= -->
+  <section id="contact">
+    <h2>聯絡我</h2>
+    <!-- mailto: 可讓點擊後自動打開電子郵件 -->
+    <p>Email：<a href="mailto:example@email.com">example@email.com</a></p>
+    <p>或在社群上找到我！</p>
+  </section>
+
+  <!-- =========================
+       頁尾（Footer）
+       ========================= -->
+  <footer>
+    <p>© 2025 我的第一個網站 | 製作者：小T</p>
+  </footer>
+</body>
+</html>
